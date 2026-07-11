@@ -9,7 +9,7 @@ API open-source yang cepat, modern, dan gratis untuk mendapatkan data administra
 ## ✨ Fitur Utama
 
 - 🚀 **Super Cepat**: Memberikan respons dengan latensi yang sangat rendah dari seluruh Indonesia.
-- 📂 **Data Lengkap**: Terdiri dari entitas Provinsi, Kabupaten/Kota, Kecamatan, dan Desa/Kelurahan.
+- 📂 **Data Lengkap**: Terdiri dari entitas Provinsi, Kabupaten/Kota, Kecamatan, Desa/Kelurahan, dan Kode POS.
 - 🛠 **Mudah Digunakan**: Endpoint RESTful yang simpel dengan respons format JSON.
 - 🛡 **CORS Ready**: Dapat diakses secara langsung dari aplikasi frontend (web/mobile).
 
