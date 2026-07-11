@@ -44,4 +44,3 @@ Mendapatkan informasi detail nama suatu wilayah berdasarkan kodenya secara presi
 - **Response**: `{ "kode": "11.01.01.2001", "nama": "KEUDE BAKONGAN" }`
 
 ---
-*Dibuat dengan ❤️ untuk developer Indonesia.*
