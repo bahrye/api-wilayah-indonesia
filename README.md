@@ -316,60 +316,9 @@ func main() {
 
 ---
 
-## 💾 Skema Database SQLite (D1 Table Schema)
-
-Struktur tabel database D1 (`wilayah`) adalah sebagai berikut:
-
-```sql
-CREATE TABLE wilayah (
-  kode TEXT PRIMARY KEY,
-  nama TEXT NOT NULL,
-  tipe TEXT,
-  kodepos TEXT
-);
-```
-
----
-
 ## 🔄 Pembaruan & Sinkronisasi Data Wilayah
 
-Data wilayah disinkronkan secara otomatis dari data publik Kepmendagri dan kode pos open-source:
-1. [cahyadsn/wilayah](https://github.com/cahyadsn/wilayah)
-2. [cahyadsn/wilayah_kodepos](https://github.com/cahyadsn/wilayah_kodepos)
-
-Untuk melakukan sinkronisasi database D1 Anda secara manual, ikuti langkah-langkah berikut:
-
-```bash
-# 1. Generate file SQL pembaruan (sync_updates.sql) dari repositori GitHub
-node sync_github_data.js
-
-# 2. Terapkan pembaruan data ke database lokal (Uji Coba)
-npx wrangler d1 execute wilayah-db --local --file=sync_updates.sql
-
-# 3. Terapkan pembaruan data langsung ke database Production di Cloudflare
-npx wrangler d1 execute wilayah-db --remote --file=sync_updates.sql
-```
-*💡 Selengkapnya silakan baca panduan lengkap pada berkas [PANDUAN_SINKRONISASI.md](PANDUAN_SINKRONISASI.md).*
-
----
-
-## 💻 Pengembangan Lokal & Deployment
-
-### Jalankan secara Lokal (Development)
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Jalankan Server Development Wrangler
-npx wrangler pages dev public --d1=DB
-```
-
-### Deployment ke Cloudflare Pages
-
-```bash
-npm run deploy
-```
+Data wilayah disinkronkan secara otomatis dan semua data diambil dari data publik Kepmendagri.
 
 ---
 
